@@ -46,13 +46,13 @@ public class PDFDownloader {
         double timeFinished = System.currentTimeMillis();
         double timeElapsed = (timeFinished - timeInitiated) / 1000;
 
-        System.out.printf("\nTime: %.2fsec.", timeElapsed);
+        System.out.printf("\nTime: %.2fsec.\n", timeElapsed);
     }
 
     static void downloadWithMultithreading() {
         System.out.println("Mode: Multi threaded");
         ExecutorService executor = Executors.newFixedThreadPool(POOL_SIZE);
-        
+
         double timeInitiated = System.currentTimeMillis();
 
         System.out.print("Files: ");
@@ -70,7 +70,7 @@ public class PDFDownloader {
         double timeFinished = System.currentTimeMillis();
         double timeElapsed = (timeFinished - timeInitiated) / 1000;
 
-        System.out.printf("\nTime: %.2fsec.", timeElapsed);
+        System.out.printf("\nTime: %.2fsec.\n", timeElapsed);
     }
 }
 
